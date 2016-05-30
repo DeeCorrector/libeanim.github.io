@@ -1,0 +1,67 @@
+<!Doctype html>
+<html>
+  <head>
+    <title>Live Sudoku Solver</title>
+    <script src="../js/jquery-2.1.3.min.js"></script>
+    <meta name="robots" content="nofollow">
+    <meta name="keywords" content="Sudoku, Solver, Live, Python">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/projects.css">
+  </head>
+  <body>
+    <article>
+      <div class="container">
+        <h1 class="text-huge">Live Sudoku Solver</h1>
+      </div>
+    </article>
+    <article id="introduction">
+      <div class="container clear text-white">
+        <div class="box">
+          <div class="box-item">
+            <h2 class="caption">Description</h2>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-item">
+            <h3></h3>
+            <p class="text-block">
+              The live sudoku solver uses <strong>computer vision technology</strong> and <strong>machine learning</strong> to detect a sudoku grid
+              and project the solution to the live camera images.
+            </p>
+            <p class="text-block">
+              First opencv is used to identify the outer bounds of the sudoku grid. After that the detected box is cut out and transformed to a
+              300x300 pixel square image. In the next step the small boxes containing the numbers are cut out and analysed by
+              a previously trained support vector machine to recognize the digits. Now a simple sudoku solving algorithm
+              calculates the solution of the sudoku and the missing numbers are projected into the image considering orientation
+              and distortion of the original grid.
+            </p>
+          </div>
+        </div>
+      </div>
+    </article>
+    <article>
+      <div class="container">
+        <h2></h2>
+        <video autoplay loop>
+          <source src="live-sudoku-solver/live-demo.webm" type="video/webm">
+        Your browser does not support the video tag.
+        </video>
+      </div>
+    </article>
+    <article>
+      <div class="container">
+        <h3>Source Code</h3>
+        <p>Will be uploaded soon.</p>
+        <!-- <a class="link" href="https://github.com/libeanim/live-sudoku-solver">
+          <div style="padding:10px; margin: 10px;">
+            <img src="../img/GitHub_Logo.png" style="max-width: 50%; height: 85px;">
+            <p>libeanim/live-sudoku-solver</p>
+          </div>
+        </a> -->
+      </div>
+    </article>
+  </body>
+</html>

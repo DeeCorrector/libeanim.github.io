@@ -1,0 +1,25 @@
+#introduction{
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#introduction{
+    background-image: url(../img/baum_unten.jpg);
+}
+
+video{
+  width: 800px;
+  height: 600px;
+}
+
+@media (max-width: 1024px){
+    #introduction{
+        background-attachment: scroll;
+    }
+    video{
+      width: 90%;
+      height: 90%;
+    }
+}

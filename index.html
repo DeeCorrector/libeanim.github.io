@@ -1,43 +1,165 @@
-<!DOCTYPE html>
+<!Doctype html>
 <html>
   <head>
     <title>Andreas Hochlehnert</title>
-    <link rel="stylesheet" href="css/main.css">
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <meta name="robots" content="nofollow">
+    <meta name="keywords" content="Andreas Hochlehnert, Developer, Designer, Physics, Python">
+    <meta name="description" content="Andreas Hochlehnert. Theoretical Physicist, Developer, Enthusiast. I love to realise innovative projects and technologies.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
     <meta charset="utf-8">
-    <meta name="keywords" content="Andreas,Hochlehnert,Physics,Bremen">
-    <meta name="language" content="en">
-    <meta name="robots" content="noindex,nofollow">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/index.css">
   </head>
   <body>
-    <header>
+    <!-- <header>
+    </header> -->
+    <article id="me">
       <div class="container clear">
         <div class="title-img">
-          <img src="img/me.jpg" style="border-radius:100%; width:150px;">
+          <img src="img/me.jpg" style="border-radius:100%; width:150px; margin-top: 1.2em;">
         </div>
         <div class="title-box">
           <h1 class="text-huge">Andreas Hochlehnert</h1>
           <h3 class="text-gray">Theoretical Physicist. Enthusiast. Developer.</h3>
         </div>
       </div>
-    </header>
-    <article style="margin-top: 150px;">
-      <div class="container">
-        <h3>Please check me out on</h3>
+    </article>
+    <article id="curriculum">
+      <div class="container text-white clear">
         <div class="box">
-          <a href="https://github.com/libeanim">
-            <div style="padding:10px; margin: 10px;">
-              <img src="img/GitHub_Logo.png" style="max-width: 50%; height: 85px;">
-              <p>libeanim</p>
+          <div class="box-item">
+            <h2 class="caption">Qualification</h2>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-item">
+            <h3>Theoretical Physics</h3>
+            <p>With the focus on theoretical neurophysics in my bachelor thesis, I modeled a biophysically plausible neuronal
+            network, which is capable of learning feature integration while self-organising to a critical state.</p>
+          </div>
+          <div class="box-item">
+            <h3>Machine Learning</h3>
+            <p>In an online course provided by Andrew Ng, founder of the Google Brain project and associate professor at Stanford University, I managed to study the basics of machine learning.</p>
+          </div>
+        </div>
+      </div>
+    </article>
+    <article id="awards">
+      <div class="container clear">
+        <div class="box show-lowres">
+          <div class="box-item">
+            <h2 class="caption">Awards</h2>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-item">
+            <h3>First Prize</h3>
+            <p>at a Hackathon organised by <a class="link" href="http://joinef.com">Entrepreneur First</a> and sponsored by DIAGEO, London 2014.</p>
+          </div>
+        </div>
+        <div class="box hide-lowres">
+          <div class="box-item">
+            <h2 class="caption">Awards</h2>
+          </div>
+        </div>
+      </div>
+    </article>
+    <article id="projects">
+      <div class="container text-white clear">
+        <h2 class="caption">Projects</h2>
+        <div class="text-cursive" style="margin-top: -55px;">(Click the titles for more information)</div>
+        <div class="box">
+          <!-- <a href="projects/patichip.html">
+            <div class="box-item hover-box">
+              <h3>Patichip</h3>
+              <p>patichip (from pati - "party" and chip - "tweet") analyses tweets about the major german pairlament parties and classifys whether the content is positive or negative.</p>
+            </div>
+          </a> -->
+          <a href="projects/fpu-problem.html">
+            <div id="project-fpu-problem" class="box-item hover-box">
+              <h3>Fermi-Pasta-Ulam Problem</h3>
+              <p>The Fermi-Pasta-Ulam experiment examines the oscilation behaviour of systems with a nonlinear resilience.</p>
             </div>
           </a>
         </div>
         <div class="box">
-          <a href="https://www.xing.com/profile/Andreas_Hochlehnert">
-            <div style="padding:10px; margin: 10px;">
-              <img src="img/xing_logo.png" style="max-width: 50%; height: 85px;">
-              <p>Andreas Hochlehnert</p>
+          <a href="projects/live-sudoku-solver.html">
+            <div id="project-sudoku" class="box-item hover-box">
+              <h3>Live Sudoku Solver</h3>
+              <p>A simple sudoku solver which uses live camera images of a sudoku grid and projects the solution into the camera image.</p>
             </div>
           </a>
+        </div>
+      </div>
+    </article>
+    <article id="side-projects">
+      <div class="container clear">
+        <div class="box">
+          <div class="box-item">
+            <h2 class="caption">voluntary engagement</h2>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-item">
+            <h3></h3>
+            <p style="margin-top: 60px;">Chief of media and online affairs at national convention of student representatives in Bremen (2014)</p>
+            <p>Financial commissioner of student representatives (2014/15)</p>
+            <!-- <p>Member of AIESEC student exchange initiative (today)</p> -->
+          </div>
+        </div>
+      </div>
+    </article>
+    <article id="skills">
+      <div class="container clear text-white">
+        <div class="box show-lowres">
+          <div class="box-item">
+            <h2 class="caption">Skills</h2>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-item">
+            <h3>Programming</h3>
+            <p>
+              Python <span class="text-cursive">(Advanced)</span>, HTML/CSS <span class="text-cursive">(Normal)</span>, Javascript <span class="text-cursive">(Normal)</span>,<br/>SQL <span class="text-cursive">(Normal)</span>, Java <span class="text-cursive">(Basics)</span>, C# <span class="text-cursive">(Basics)</span>, C++/Qt <span class="text-cursive">(Basics)</span>
+            </p>
+          </div>
+          <div class="box-item">
+            <h3>Soft</h3>
+            <p>
+              Project Management, Event Management Expirience,<br/>Team Experience
+            </p>
+          </div>
+        </div>
+        <div class="box hide-lowres">
+          <div class="box-item">
+            <h2 class="caption">Skills</h2>
+          </div>
+        </div>
+      </div>
+    </article>
+    <article id="contact">
+      <div class="container clear">
+        <h2 class="caption">Check me out on</h2>
+        <div class="box">
+          <div class="box-item">
+            <a class="link" href="https://github.com/libeanim">
+              <div style="padding:10px; margin: 10px;">
+                <img src="img/GitHub_Logo.png" style="max-width: 50%; height: 85px;">
+                <p>libeanim</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-item">
+            <a class="link" href="https://www.xing.com/profile/Andreas_Hochlehnert">
+              <div style="padding:10px; margin: 10px;">
+                <img src="img/xing_logo.png" style="max-width: 50%; height: 85px;">
+                <p>Andreas Hochlehnert</p>
+              </div>
+            </a>
+          </div>
         </div>
       </div>
     </article>

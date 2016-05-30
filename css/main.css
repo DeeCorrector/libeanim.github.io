@@ -17,24 +17,33 @@ h1, h2, h3, h4, h5, h6, h7, h8, h9 {
     font-family: 'Raleway', sans-serif;
 }
 
+/*h1{
+    font-size: 5em;
+}*/
 a {
     text-decoration: none;
+    cursor: pointer;
+    color: inherit;
+}
+
+.link {
     font-weight: bold;
     color: #000eb4;
 }
-.button-link:hover, a:hover{
+.link:hover{
     color:#2581ff;
-    cursor: pointer;
 }
 
 header{
     top: 0;
-    /*position: fixed;*/
+    position: fixed;
+    height: 4em;
     width: 100%;
     border-bottom: solid 1px #EEE;
     text-align: center;
+    position: fixed;
     background-color: white;
-    padding-top: 20px;
+    display:;
 }
 header p{
     float: left;
@@ -55,25 +64,36 @@ nav ul li a {
     color: black;
 }
 
-.margin-title{
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
+/*.margin-title{
+    margin-top: 2em;
+    margin-bottom: 2em;
+}*/
 
 
 .title-box{
     float:left;
-}
-.title-box h1{
-  margin: 30px 0px 0px 0px;
-}
-.title-box h3{
-  margin: 5px 0px 0px 0px;
+    width:60%;
+    /*margin-left:6%;
+    margin-top:12%;*/
 }
 
 .title-img{
-  float:left;
-  width:33%;
+    float:left;
+    width:33%
+}
+
+.text-gray{
+    color: gray;
+}
+.text-cursive{
+    font-style: italic;
+}
+.text-huge {
+    font-size: 3em;
+}
+
+.hide-lowres{
+    display: inline-block;
 }
 
 .clear:before,.clear:after {
@@ -85,34 +105,19 @@ nav ul li a {
 	clear:both
 }
 
-.text-gray{
-    color: gray;
-}
-.text-huge {
-    font-size: 3em;
-}
-
-.text-left{
-  text-align: left;
-}
-.text-cursive{
-    font-style: italic;
-}
-
-.hide-lowres{
-    display: inline-block;
-}
-
 .container{
     margin: auto;
     text-align: center;
     align-content: center;
-    max-width: 1024px;
+    width: 1024px;
 }
 
 .text-white{
     color: white;
     text-shadow: 1px 1px 2px #555;
+}
+.text-block{
+  text-align: left;
 }
 
 .caption{
@@ -130,13 +135,13 @@ nav ul li a {
 }
 
 .box-item{
-    margin-bottom: 100px;
+    margin-bottom: 45px;
 }
 
 .box-item h3{
     font-style: normal;
     font-size: 2.25em;
-    /*text-transform: uppercase;*/
+    #text-transform: uppercase;
     margin-bottom: 0px;
 }
 
@@ -153,12 +158,19 @@ nav ul li a {
 }
 .list-container{
     text-align: left;
-    /*width: 100%;*/
+    #width: 100%;
 }
 .list-container ul li{
     margin-bottom: 1em;
 }
-
+.hover-box{
+    padding: 1em;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+}
+.hover-box:hover{
+    background-color: rgba(200, 200, 200, 0.3);
+}
 
 .warning-box{
     background-color: #FFED8B;
@@ -166,8 +178,8 @@ nav ul li a {
     text-align: center;
 }
 
-#about{
-    padding-top: 5em;
+.show-lowres{
+   display: none;
 }
 
 footer {
@@ -176,6 +188,13 @@ footer {
 }
 
 @media (max-width: 1024px){
+    .container{
+        margin: auto;
+        text-align: center;
+        align-content: center;
+        width: 80%;
+    }
+
     .box{
         width:100%;
         margin:2%;
@@ -191,33 +210,10 @@ footer {
         width:100%;
         margin: 2%;
     }
-     .hide-lowres{
+    .hide-lowres{
         display: none;
     }
-    #p-info, #phy-info{
-        background-attachment: scroll;
-    }
-}
-
-#p-info{
-  background-image: url("../img/phot.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: 50% 50%;
-  background-size: cover;
-}
-#phy-info{
-  background-image: url("../img/phy.png");
-  background-repeat: repeat;
-  background-attachment: fixed;
-  background-position: 10% 0%;
-  background-blend-mode: darken;
-  background-size: cover;
-}
-
-.text-center{
-  text-align: center;
-}
-.text-right{
-  text-align: right;
+    .show-lowres{
+       display: block;
+   }
 }

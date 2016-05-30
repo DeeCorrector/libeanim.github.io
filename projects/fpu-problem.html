@@ -1,0 +1,101 @@
+<!Doctype html>
+<html>
+  <head>
+    <title>Fermi-Pasta-Ulam Problem</title>
+    <script src="../js/jquery-2.1.3.min.js"></script>
+    <meta name="robots" content="nofollow">
+    <meta name="keywords" content="Fermi, Pasta, Ulam, Python">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/projects.css">
+    <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+  </head>
+  <body>
+    <article>
+      <div class="container">
+        <h1 class="text-huge">Fermi-Pasta-Ulam Problem</h1>
+      </div>
+    </article>
+    <article id="introduction">
+      <div class="container clear text-white">
+        <div class="box">
+          <div class="box-item">
+            <h2 class="caption">Description</h2>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-item">
+            <h3></h3>
+            <p class="text-block">
+              The Fermi-Pasta-Ulam Problem examines the oscillation behaviour of complex systems.
+              It was one of the first computational experiments and its resolution had a major impact in the chaos theory.
+              In the model a one-dimensional chain of \(N\) particles, which have nearest neighbor coupling, is simulated.
+            </p>
+            <p class="text-block">
+              The <strong>resilience</strong> \(\boldsymbol{F}\) depends on the difference of the deflection \(\Delta y\)
+              between neighboring particles. Additionally nonlinear terms are considered in the resilience
+              $$F = \Delta y + \alpha \Delta x^2 + \beta \Delta x^3\mathrm{,}$$ where \(\alpha\) and \(\beta\)
+              are constants which influence the impact of the nonlinear terms.
+            </p>
+            <p class="text-block">
+              The <strong>basic assumption</strong> was, that an anharmonic system evolves into chaos, independent of the initial state.
+            </p>
+          </div>
+        </div>
+      </div>
+    </article>
+    <article>
+      <div class="container">
+        <h2></h2>
+        <video autoplay loop>
+          <source src="fpu-problem/animation-small-anharmonicity.webm" type="video/webm">
+        Your browser does not support the video tag.
+        </video>
+        <p style="margin-top: -30px; margin-bottom: 30px;">Animation of the particle chain with an \(\alpha = 0\) and a \(\beta = 0.3\).</p>
+      </div>
+    </article>
+    <article>
+      <div class="container clear">
+        <div class="box">
+          <div class="box-item">
+            <h3 style="margin-bottom:100px;">Energy Distributions</h3>
+            <p class="text-block">
+              Surprisingly, with a small anharmonicity of \(\alpha = 0\) and \(\beta= 0.3\) (figure right) the energy periodically oscillates
+              between mode 1 and 3, whereas mode 2 stays 0. This contradicts the assumption that in an anharmonic system the
+              energy is distributed equally over all modes and that the system completely falls into chaos.
+            </p>
+          </div>
+          <div class="box-item">
+            <iframe style="border: medium none; width: 480px; height: 560px;" async src="fpu-problem/large-anharmonicity.html"></iframe>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-item">
+            <iframe style="border: medium none; width: 480px; height: 560px;" async src="fpu-problem/small-anharmonicity.html"></iframe>
+          </div>
+          <div class="box-item">
+            <p class="text-block">
+              By increasing the anharmonicity to \(\alpha = 1\) and \(\beta= 0.3\) (figure left) there is still a periodic
+              behaviour visible, however, the total energy in mode 1 to 3 is decreasing over time and actually distributed
+              to higher modes.
+            </p>
+          </div>
+        </div>
+      </div>
+    </article>
+    <article>
+      <div class="container">
+        <h3>Source Code</h3>
+        <a class="link" href="https://github.com/libeanim/fpu-problem">
+          <div style="padding:10px; margin: 10px;">
+            <img src="../img/GitHub_Logo.png" style="max-width: 50%; height: 85px;">
+            <p>libeanim/fpu-problem</p>
+          </div>
+        </a>
+      </div>
+    </article>
+  </body>
+</html>

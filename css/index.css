@@ -1,0 +1,31 @@
+#me{
+    /*padding-top: 5em;*/
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+#curriculum, #projects, #skills{
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#curriculum{
+    background-image: url(../img/ast.jpg);
+}
+#projects{
+    background-image: url(../img/pizza.jpg);
+}
+#skills{
+    background-image: url(../img/keimling.jpg);
+}
+#site-notice{
+    border-top: solid 1px #EEE;
+}
+
+@media (max-width: 1024px){
+    #curriculum, #projects, #skills{
+        background-attachment: scroll;
+    }
+}
