@@ -18,8 +18,11 @@ video{
     #introduction{
         background-attachment: scroll;
     }
+    #introduction{
+        background-image: url(../img/baum_unten_small.jpg);
+    }
     video{
-      width: 90%;
-      height: 90%;
+      width: 100%;
+      height: 100%;
     }
 }
