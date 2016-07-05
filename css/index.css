@@ -28,4 +28,14 @@
     #curriculum, #projects, #skills{
         background-attachment: scroll;
     }
+
+    #curriculum{
+        background-image: url(../img/ast_small.jpg);
+    }
+    #projects{
+        background-image: url(../img/pizza_small.jpg);
+    }
+    #skills{
+        background-image: url(../img/keimling_small.jpg);
+    }
 }
